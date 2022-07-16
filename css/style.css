@@ -1,0 +1,395 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fafafa;
+    color: #2a2a2a;
+    margin: 0;
+}
+
+.flex-container {
+    margin: 0;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: #999;
+}
+
+.container-fluid {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+a,
+a:hover,
+a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.navbar {
+    padding: 15px 10px;
+    background: #fff;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 40px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-btn {
+    box-shadow: none;
+    outline: none !important;
+    border: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dashed #ddd;
+}
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    padding-bottom: 10px;
+    align-items: stretch;
+}
+
+#content-wrapper {
+    position: relative;
+    min-height: 100%;
+    width: 100%;
+}
+
+.wrapper #content-wrapper .content {
+    flex: 1 0 auto;
+}
+
+
+/*navbar*/
+
+.navbar-nav {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    background: #ffffff;
+    color: #000000;
+    transition: all 0.3s;
+    min-height: 100vh;
+    /*
+    height: 100%;
+    left: 0;
+    top: 0;
+    overflow-x: hidden; */
+}
+
+#sidebar.active {
+    margin-left: -250px;
+}
+
+.sidebar-header {
+    /*
+    padding-top: 15px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 10px;*/
+    padding: 20px;
+    background: #2196f3;
+    color: white;
+}
+
+.sidebar-header3 {
+    padding: 20px;
+    background: #2BBBAD;
+    color: white;
+}
+
+.sidebar-header2 {
+    padding: 20px;
+    background: #33b5e5;
+    color: white;
+}
+
+#sidebar ul.components {
+    padding: 20px 0px;
+}
+
+ion-icon {
+    position: relative;
+    /* Adjust these values accordingly */
+    top: 2px;
+    /* Remove tooltip/alt */
+    pointer-events: none;
+}
+
+#sidebar ul p {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+
+#sidebar ul li a {
+    padding: 20px;
+    font-size: 1em;
+    display: block;
+}
+
+
+/* #sidebar ul li a:hover {
+    color: #ffffff;
+    background: #2196f3;
+} */
+
+.adminsidebar ul li a:hover {
+    color: #ffffff;
+    background: #2196f3;
+}
+
+.staffsidebar ul li a:hover {
+    color: #ffffff;
+    background: #2BBBAD;
+}
+
+.vetsidebar ul li a:hover {
+    color: #ffffff;
+    background: #33b5e5;
+}
+
+.adminsidebar a[aria-expanded="true"] {
+    color: rgb(255, 255, 255);
+    background: #42a5f5;
+}
+
+.staffsidebar a[aria-expanded="true"] {
+    color: rgb(255, 255, 255);
+    background: #2bbbadcc;
+}
+
+.vetsidebar a[aria-expanded="true"] {
+    color: rgb(255, 255, 255);
+    background: #33b6e5be;
+}
+
+.adminsidebar ul li.active>a {
+    color: #fff;
+    background: #2196f3;
+}
+
+.vetsidebar ul li.active>a {
+    color: #fff;
+    background: #33b5e5;
+}
+
+.staffsidebar ul li.active>a {
+    color: #fff;
+    background: #2BBBAD;
+}
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+.flex-column {
+    flex-direction: column !important;
+}
+
+.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    /*
+    background-color: #b7d8f3; */
+    background-color: rgba(187, 222, 251, 0.322);
+    color: rgb(0, 0, 0);
+}
+
+.img-responsive {
+    height: 2rem;
+}
+
+a.download {
+    background: #fff;
+    color: #7386D5;
+}
+
+a.article,
+a.article:hover {
+    background: #6d7fcc !important;
+    color: #fff !important;
+}
+
+.navbar-header-text {
+    margin: 10px;
+}
+
+.sidebar_nav {
+    padding-top: 10px;
+    /*padding-right: 1rem;
+    padding-left: 1rem; */
+    transition: .5s;
+    z-index: var(--z-fixed);
+    height: 100%!important;
+}
+
+.hr {
+    background-color: #fff;
+}
+
+
+/* CLIENT/OWNER LINK SA PATIENT INFO */
+
+.client-info:hover {
+    text-decoration: underline;
+}
+
+
+/* VITALITY STATUS */
+
+.vitalitystatus {
+    background-color: transparent;
+    border-radius: 50%;
+}
+
+.vitalitystatus:hover {
+    background-color: #e3f2fd;
+    border-radius: 50%;
+}
+
+.vitalitystatus-icon:hover {
+    background-color: orange;
+}
+
+
+/* .btn-info {
+    color: #001346 !important;
+    background-color: #ffffff !important;
+    border-color: #ffffff !important;
+} */
+
+footer.sticky-footer {
+    padding: 2rem 0;
+    flex-shrink: 0;
+}
+
+
+/* Button No Border */
+
+.btn-no-border {
+    border: none;
+}
+
+
+/* Add Patient*/
+
+select option:first-child {
+    color: grey;
+    display: none;
+}
+
+@media(max-width:768px) {
+    #sidebar {
+        margin-left: -250px;
+    }
+    #sidebar.active {
+        margin-left: 0px;
+    }
+    #sidebarCollapse span {
+        display: none;
+    }
+}
+
+
+/* help */
+
+.accordion {
+    background-color: #fff;
+}
+
+
+/* ERROR PAGE */
+
+.img-fluid {
+    max-width: 60%;
+    height: auto;
+}
+
+
+/* SEARCH ICON SA LOOB NG SEARCH BOX */
+
+
+/* SEARCH BUTTON  */
+
+.form-control {
+    padding-left: 2.375rem;
+}
+
+.form-control-feedback {
+    position: absolute;
+    z-index: 5;
+    display: block;
+    width: 2.5rem;
+    height: 2.5rem;
+    line-height: 2.3rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+
+
+/* TABLE */
+
+
+/* action */
+
+.btn-orange {
+    background-color: #f98125;
+}
+
+.action-btn {
+    margin: 2px;
+}
+
+@media screen and (max-width: 1370px) and (min-width: 0px) {
+    .mobile-icon-only {
+        display: none;
+    }
+}
+
+
+/* For mobile phones: */
+
+@media (min-width: 375) {
+    .td-flex button {
+        display: table-row;
+    }
+    .action-btn {
+        margin-bottom: 10vh;
+    }
+}

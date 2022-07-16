@@ -1,0 +1,23 @@
+@page {
+    margin: 0;
+}
+
+.card-header,
+.printccs {
+    display: none;
+    visibility: none;
+}
+
+html {
+    width: 8.5in;
+    height: 11in;
+    background-color: white;
+}
+
+.printbg {
+    background-color: white;
+}
+
+.printtotalcol {
+    margin-top: 50px;
+}
